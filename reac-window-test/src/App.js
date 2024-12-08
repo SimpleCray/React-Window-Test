@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./styles.css";
+import styled from "@emotion/styled";
+import Container from "./components/Container";
 
-function App() {
+const MainDiv = styled.div`
+  display: flex;
+`;
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainDiv className="App">
+      {/* <div style={{ width: "300px" }}>
+        <nobr>Flex demo</nobr>
+      </div> */}
+      <Container />
+    </MainDiv>
   );
 }
-
-export default App;
