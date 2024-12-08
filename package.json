@@ -1,34 +1,41 @@
 {
-  "name": "react-flex-grid-react-window",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
+  "name": "react-window-test",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@emotion/core": "10.0.35",
     "@emotion/styled": "10.0.27",
     "@trussworks/react-uswds": "1.9.3",
-    "ereact": "2.0.2",
-    "memoize-one": "5.1.1",
-    "react": "17.0.0",
-    "react-dom": "17.0.0",
-    "react-scripts": "3.4.3",
-    "react-use": "15.3.4",
-    "react-window": "1.8.6"
-  },
-  "devDependencies": {
-    "typescript": "3.8.3"
+    "cra-template": "1.2.0",
+    "memoize-one": "^6.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scripts": "5.0.1",
+    "react-use": "^17.5.1",
+    "react-window": "^1.8.10"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
